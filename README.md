@@ -3,8 +3,8 @@ todo: -->
 <!-- First, complete the "Before you start" section
  Structure your project:
 1. Create three HTML files: index.html, waitlist.html, and thank-you.html //done
-2. Set up your CSS and JavaScript files
-3. Initialize DaisyUI in your project
+2. Set up your CSS and JavaScript files // done
+3. Initialize DaisyUI in your project //done
 
 Build your pages incrementally:
 
