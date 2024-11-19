@@ -1,55 +1,35 @@
-/* 
-    Main Stylesheet for Flip Tribe Us
-    Contains global styles and custom components
-*/
-
-/* CSS Variables */
-:root {
-    --primary-color: #7C3AED;
-    --secondary-color: #EC4899;
-    --text-color: #1F2937;
-    --background-color: #F9FAFB;
-}
-
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Layout Components */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-/* Navigation Styles */
-.navbar {
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-/* Hero Section */
+//* Custom styles to supplement DaisyUI */
 .hero {
-    background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-/* Card Animations */
+.hero-content {
+  z-index: 1;
+  color: white;
+}
+
+/* Add smooth scrolling to the page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add some hover effects to cards */
 .card {
-    transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+/* Custom animation for the CTA button */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
